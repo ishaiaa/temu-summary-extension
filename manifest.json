@@ -1,0 +1,25 @@
+{
+    "name": "Temu Expenses Stats",
+    "version": "0.0.1",
+    "description": "track your total money spent on temu",
+    "manifest_version": 3,
+    "author": "Ishaia",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Total Temu Expenses"
+    },
+    "icons": {
+        "16": "icon-16.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.temu.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}

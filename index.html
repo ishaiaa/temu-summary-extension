@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temu expenses summary</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="navBar">
+            <div class="icon"></div>
+            <h1 class="">Temu expenses summary</h1>
+        </div>
+        <div id="tes-maincontent" class="content">
+            <div class="buttonPanelTop">
+                <div id="tes-b1" class="button active">This Month</div>
+                <div id="tes-b2" class="button">This Year</div>
+                <div id="tes-b3" class="button">Total</div>
+                <div id="tes-b4" class="button">Time Span</div>
+            </div>
+            <div id="tes-datepick" class="buttonPanelLower locked">
+                <div class="datePicker">
+                    <div class="dateCell">
+                        <p>From:</p>
+                        <input id="tes-datefrom" type="date">
+                    </div>
+                    <div class="dateCell">
+                        <p>To:</p>
+                        <input id="tes-dateto" type="date">
+                    </div>
+                </div>
+            </div>
+            <div class="spendingInfo">
+                <p id="tes-vartext"></p>
+                <p id="tes-moneyspent" class="moneySpent">-</p>
+                <div class="progressInfo">
+                    <p id="tes-progressinfo"></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Made by Ishaia <3 </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
