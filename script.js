@@ -19,8 +19,6 @@ let now = new Date();
 let startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1).getTime();
 let startOfYear = new Date(now.getFullYear(), 0, 1).getTime();
 
-
-
 var orderData = null
 var currentTab = 1
 
@@ -142,10 +140,7 @@ async function getTotalPrices() {
     })
 
     moneySpent.innerHTML = `${Math.round(moneyValue*100)/100} ${currency}`
-    // moneySpent.innerHTML = `${datePickFrom.valueAsDate.getTime()}, ${datePickTo.valueAsDate.getTime()}`
-    // orderData.orders.forEach(order => {
-    //     moneySpent.innerHTML += `-----${order.orderTime}`
-    // })
+
     console.log(datePickFrom.valueAsDate)
     console.log(datePickTo.valueAsDate)
 }
@@ -165,7 +160,6 @@ function getActiveTabUrl() {
     });
   }
   
-  // Async function to check if we're on the correct website
   async function checkCurrentWebsite() {
     try {
       const activeTabUrl = await getActiveTabUrl();
